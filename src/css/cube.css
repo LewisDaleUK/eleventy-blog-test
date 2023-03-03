@@ -1,0 +1,6 @@
+@import-glob "compositions/*";
+@import-glob "utilities/*";
+@import-glob "blocks/*";
+@import-glob "exceptions/*";
+
+@tailwind utilities;

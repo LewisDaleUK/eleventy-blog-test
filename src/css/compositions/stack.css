@@ -1,0 +1,39 @@
+[class*="stack"] > * + * {
+  margin-block-start: var(--vertical-spacing, 1.5rem);
+}
+
+.stack-4xs > * + * {
+  --vertical-spacing: var(--space-size-4xs);
+}
+
+.stack-3xs > * + * {
+  --vertical-spacing: var(--space-size-3xs);
+}
+
+.stack-2xs > * + * {
+  --vertical-spacing: var(--space-size-2xs);
+}
+
+.stack-xs > * + * {
+  --vertical-spacing: var(--space-size-xs);
+}
+
+.stack-sm > * + * {
+  --vertical-spacing: var(--space-size-s);
+}
+
+.stack-md > * + * {
+  --vertical-spacing: var(--space-size-m);
+}
+
+.stack-lg > * + * {
+  --vertical-spacing: var(--space-size-l);
+}
+
+.stack-xl > * + * {
+  --vertical-spacing: var(--space-size-xl);
+}
+
+.stack-2xl > * + * {
+  --vertical-spacing: var(--space-size-2xl);
+}

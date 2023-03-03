@@ -1,0 +1,35 @@
+.home {
+  h1,
+  h2,
+  h3 {
+    &::before {
+      content: none;
+    }
+  }
+
+  h1 {
+    font-size: var(--text-size-3xl);
+  }
+
+  h2 {
+    font-size: var(--text-size-xl);
+  }
+
+  picture {
+    max-width: clamp(8rem, calc(1.09rem + 10vw), 12rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  time {
+    color: var(--color-zinc-300);
+    display: block;
+    font-size: var(--text-size-s);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  p {
+    max-width: 50ch;
+  }
+}

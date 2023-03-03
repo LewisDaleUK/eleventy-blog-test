@@ -1,0 +1,22 @@
+[class*="wrapper"] {
+	max-width: var(--wrapper-size, var(--screen-3xl));
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--wrapper-padding, var(--space-size-3xl));
+	padding-right: var(--wrapper-padding, var(--space-size-3xl));
+}
+
+.wrapper-sm {
+	--wrapper-size: var(--screen-sm);
+	--wrapper-padding: var(--space-size-s);
+}
+
+.wrapper-md {
+	--wrapper-size: var(--screen-md);
+	--wrapper-padding: var(--space-size-m);
+}
+
+.wrapper-lg {
+	--wrapper-size: var(--screen-lg);
+	--wrapper-padding: var(--space-size-l);
+}

@@ -1,0 +1,6 @@
+.site-title {
+  font-size: var(--text-size-xl);
+  letter-spacing: -0.5rem;
+  line-height: 1;
+  text-decoration: none;
+}

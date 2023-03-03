@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{metadata.site.language}}">
+	<head>
+		<title>{{ title | safe }} | {{ metadata.site.name }}</title>
+		{% if includeFA %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css" />
+		{% endif %}
+		{% if includePrism %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/prism.css" />
+		{% endif %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content="eleventy" />
+
+		<meta name="author" content="{{ metadata.author.name }}" />
+		<meta name="description" content="{{ description }}" />
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<header class="wrapper-lg row space-between">
+			<a href="/" class="site-title">LD</a>
+
+			<nav>
+				<ul class="row">
+					<li><a href="/">Home</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+		{{ content | safe }}
+		<footer>
+			<div class="wrapper-lg">Copyright &copy; {{ today.year }} {{ metadata.author.name }}</div>
+		</footer>
+	</body>
+</html>

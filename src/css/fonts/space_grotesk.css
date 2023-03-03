@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('/assets/fonts/SpaceGrotestk.woff2') format('woff2 supports variations'),
+        url('/assets/fonts/SpaceGrotesk.woff2') format('woff2-variations');
+    font-weight: 300 400 500 600 700;
+    font-feature-settings: "liga", "ss03", "ss02", "ss01", "onum";
+}

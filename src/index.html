@@ -1,0 +1,30 @@
+---
+title: Home
+layout: base.njk
+---
+
+<main class="home wrapper-lg stack-2xl">
+	<section class="stack-md row">
+		<h1>Hi, I'm Lewis</h1>
+		{% image metadata.author.avatar, "My face", "box circle", "300px", [300] %}
+
+		<p class="inline-block max-w-[45ch]">
+    And this is my simple blog starter that I'm going to use to test out a few different CMS options. It's a slightly stripped-down version of my <a href="https://lewisdale.dev">actual blog</a>, just with some of the Wordpress fluff removed.
+		</p>
+		<p>
+			You can find also find me on <a href="https://dapchat.online/@lewisdaleuk" rel="me" target="blank">Mastodon</a>, follow my reading on <a href="https://bookrastinating.com/user/lewisdaleuk">Bookwyrm</a>, subscribe to my <a href="/feed.xml">RSS feed</a>, or email me at <a href="mailto:hello@lewiswrites.software">hello@lewiswrites.software</a>.
+		</p>
+
+	</section>
+	<section class="stack-md">
+		<h2>Recent Posts</h2>
+
+		<ul class="stack-2xs">
+		{% for post in collections.posts | take(3) %}
+			<li><a href="/post/{{ post.slug }}">{{ post.data.title | safe }}</a> <time>{{ post.date | dateDisplay }}</time></li>
+		{% endfor %}
+		</ul>
+
+		<a href="/blog" class="block">View more posts</a>
+	</section>	
+</main>

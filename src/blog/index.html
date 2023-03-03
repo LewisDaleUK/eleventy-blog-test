@@ -1,0 +1,30 @@
+---
+title: Blog
+layout: base.njk
+pagination:
+    data: collections.posts
+    size: 5
+    alias: posts
+---
+<main class="wrapper-md stack-lg">
+    <h1>Blog posts</h1>
+
+    <ol class="stack-xl">
+        {% for item in posts %}
+        <li class="stack-xs">
+            <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+            <time class="block">{{ item.date | parseDate | dateDisplay }}</time>
+            {{ item.excerpt | safe }}
+            <a href="{{ item.url }}" class="inline-block">Read more</a>
+        </li>
+        {% endfor %}
+    </ol>
+    <nav class="blog-nav row" data-spacing="between">
+        {% if pagination.href.next %}
+            <a href="{{ pagination.href.next }}">Older</a>
+        {% endif %}
+        {% if pagination.href.previous %}
+            <a href="{{ pagination.href.previous }}">Newer</a>
+        {% endif %}
+    </nav>
+</main>

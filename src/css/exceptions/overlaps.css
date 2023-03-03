@@ -1,0 +1,15 @@
+.overlaps {
+	gap: 0;
+	row-gap: var(--space-size-2xs);
+	max-width: 30rem;
+	padding-left: 1rem;
+
+	> * {
+		display: inline-block;
+		max-width: 3rem;
+	}
+
+	> * {
+		margin-inline-start: -1rem;
+	}
+}

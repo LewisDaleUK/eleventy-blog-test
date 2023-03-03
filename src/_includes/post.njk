@@ -1,0 +1,14 @@
+---
+layout: base.njk
+includePrism: true
+---
+<main class="wrapper-md stack-lg">
+    <article class="stack-md h-entry">
+        <h1 class="p-name"><a href="{{ post.url }}">{{ title | safe }}</a></h1>
+        {{ post.excerpt | safe }}
+        <div class="e-content stack-md">
+        {{ content | safe }}
+        </div>
+    </article>
+
+</main>

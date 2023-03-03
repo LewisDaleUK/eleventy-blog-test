@@ -1,0 +1,11 @@
+@import-glob "fonts/*";
+@import "custom-props.css";
+@import "reset.css";
+@import "globals.css";
+
+@import-glob "compositions/*";
+@import-glob "utilities/*";
+@import-glob "blocks/*";
+@import-glob "exceptions/*";
+
+@tailwind utilities;
